@@ -3,15 +3,18 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import './App.css';
-import HiderApp from './hiderProject/hiderApp';
+import '../App.css';
+import HiderApp from '../hiderProject/hiderApp';
+import ErrorPage from "./errorPage";
 import Root from "./root";
 
 
 const routes = createBrowserRouter([
   {
     path: "/",
-    element: <Root></Root>
+    element: <Root></Root>,
+    errorElement:<ErrorPage />,
+
   },
   {
     path:"/hider",
